@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Portal</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- QR code generator library-->
+	<script src="js/qr-encode/qrcode.js"></script>
+	
+	<!-- QR code scanner library-->
+	<script src="js/qr-decode/grid.js"></script>
+	<script src="js/qr-decode/version.js"></script>
+	<script src="js/qr-decode/detector.js"></script>
+	<script src="js/qr-decode/formatinf.js"></script>
+	<script src="js/qr-decode/errorlevel.js"></script>
+	<script src="js/qr-decode/bitmat.js"></script>
+	<script src="js/qr-decode/datablock.js"></script>
+	<script src="js/qr-decode/bmparser.js"></script>
+	<script src="js/qr-decode/datamask.js"></script>
+	<script src="js/qr-decode/rsdecoder.js"></script>
+	<script src="js/qr-decode/gf256poly.js"></script>
+	<script src="js/qr-decode/gf256.js"></script>
+	<script src="js/qr-decode/decoder.js"></script>
+	<script src="js/qr-decode/qrcode.js"></script>
+	<script src="js/qr-decode/findpat.js"></script>
+	<script src="js/qr-decode/alignpat.js"></script>
+	<script src="js/qr-decode/databr.js"></script>
+
+	<!-- BigInteger library-->
+	<script src="js/jsbn/jsbn.js"></script>
+	<script src="js/jsbn/jsbn2.js"></script>
+	<script src="js/jsbn/prng4.js"></script>
+	<script src="js/jsbn/rng.js"></script>
+	
+	<!-- Crypto implementation and main code-->
+	<script src="js/aes.js"></script>
+	<script src="js/rsa.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/gui.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="side">
+		</div>
+		<div class="main">
+			<div class="block">
+				<div id="bar">
+					<span display="aeskey.html">[Key Generation (AES)]</span>
+					<span display="rsakey.html">[Key Generation (RSA)]</span>
+					<span display="up.html">[Upload]</span>
+					<span display="down.php">[Download]</span>
+				</div>
+				<div id="display">
+					<pre>
+██████╗  ██████╗ ██████╗ ████████╗ █████╗ ██╗     
+██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔══██╗██║     
+██████╔╝██║   ██║██████╔╝   ██║   ███████║██║     
+██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══██║██║     
+██║     ╚██████╔╝██║  ██║   ██║   ██║  ██║███████╗
+╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝
+
+Security is important, but nobody is good at it.
+This project is for those who always use weak passwords or forget their strong passwords.
+
+We don't use password at all. We use physical key.
+Generate a key for yourself -> Use the key to upload file -> Use the key to download file
+That's our simple solution. Try it now!
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

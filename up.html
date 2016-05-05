@@ -1,0 +1,25 @@
+<script>
+//Scanner initialization
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+navigator.getUserMedia({video: true}, function(stream) {
+	$("#scanner")[0].src = window.URL.createObjectURL(stream);
+}, function(e){
+	console.log(e);
+});
+</script>
+
+<pre>
+First, click on the video to scan your physical key.
+Second, choose the file to upload.
+Finally, wait for it to encrypt and upload. Everything is done locally, so be patient!
+</pre>
+
+<video id="scanner" onclick="scan()" style="width: 480px; height: 360px;" autoplay></video>
+<canvas id="qr-canvas" style="width: 2048px; height: 1536px; display: none"></canvas>
+<input id="key" type="text" style="display: none"><br>
+<span id="keyinfo">Click to scan!</span><br>
+<span id="error"></span><br>
+
+<input id="file" type="file">
+<button type="button" onclick="upload()">Upload</button>
